@@ -84,16 +84,34 @@
         </div>
         <div id="contact">
             <form>
-                <legend><strong>Deja tus datos aquí</strong></legend>
-                <label for="nombre">Nombre</label>
-                <input type="text"><br>
-                <label for="apellido">Apellido</label>
-                <input type="text"><br>
-                <label for="email">email</label>
-                <input type="email" name="email"><br>
-                <label for="#">Mensaje</label><br>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
-                <button type="submit">Send</button><br>
+                <fieldset>
+                    <legend><strong>Deja tus datos aquí</strong></legend>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Xxxxx Xxxxx"><br><br>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Xxxxx Xxxxx"><br><br>
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" placeholder="email@gmail.com"><br><br>
+
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="tel" placeholder="318 827 9811"><br><br>
+
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Digita aquí tu mensaje"></textarea><br><br>
+
+                    <p>Como te gustaría ser contactado?</p>
+                    <label for="contactar">Llamada telefónica</label>
+                    <input type="radio" name="llamada">
+                    <label for="emailContact">E-mail</label>
+                    <input type="radio" name="emailContact">
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="radio" name="whatsapp"><br><br><br>
+
+                    <button type="submit">Send</button>
+                </fieldset><br>
             </form><br>
             <a href="#home"><em>return HOME</em></a><br><br>
         </div>

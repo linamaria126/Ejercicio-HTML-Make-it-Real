@@ -7,47 +7,99 @@
     <title>Página de Recetas - PequeRecetas</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <h1>PequeRecetas</h1>
         <nav>
             <ul>
-                <li><a href="#">Introducción</a></li>
-                <li><a href="#">Tabla</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Form</a></li>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contact">Contact Form</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="banner">
+        <div id="banner">
             <img src="img/banner.webp" alt="Banner recetas" width="1800" height="300">
 
         </div>
 
-        <div class="introduccion">
-            <h3>Aquí encontrarás recetas de todo tipo, adaptables a los más pequeñitos de la casa. <br>
-                Recetas originales, divertidas, pero sobretodo saludables.</h3>
+        <div id="introduccion">
+            <h2>Introducción</h2>
+            <h3>Aquí encontrarás recetas de todo tipo, adaptables a los más pequeñitos de la casa. Recetas originales, divertidas, pero sobretodo saludables.</h3>
+            <br>
+            <a href="#home"><em>return HOME</em></a>
         </div>
 
-        <div class="tabla">
-            <h2>Tabla de recetas</h2>
+        <div id="tabla">
+            <h2>Receta Pay de Queso con Oreo o Chokis</h2>
             <table>
-                <tr>
-                    <th>Ingredientes</th>
-                    <td>
-                        <ul>
-                            <li>1 lata de leche evaporada</li>
-                            <li>1 lata de leche condensada</li>
-                            <li>190gr de queso philadelfia</li>
-                            <li>1 cucharadita de vainilla</li>
-                            <li>2 huevos</li>
-                            <li>16 galletas oreo o chokis (12 trituradas)</li>
-                            <li>1 cucharada de mantequilla (derretir)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+                <thead>
+                    <tr>
+                        <th scope="col">Ingredientes</th>
+                        <th scope="col">Preparación</th>
+                        <th scope="col">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>1 lata de leche evaporada</li>
+                                <li>1 lata de leche condensada</li>
+                                <li>190gr de queso philadelfia</li>
+                                <li>1 cucharadita de vainilla</li>
+                                <li>2 huevos</li>
+                                <li>16 galletas oreo o chokis (12 trituradas)</li>
+                                <li>1 cucharada de mantequilla (derretir) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Triturar las galletas oreo puedes hacerlo dentro del mismo molde con una taza las aplastas o en una bolsita o en la licuadora/procesadora</li>
+                                <li>Pones en el molde y añades la mantequilla derretida mezclas y comienzas a acomodarla por todo el fondo de tu molde</li>
+                                <li>Refrigera mientras pones en tu licuadora los demás ingredientes, no olvides encender en horno para que se precaliente a  180 grados</li>
+                                <li>Vierte la mezcla en el molde, añade las galletas oreo que nos sobraron en trozos y lleva al horno por 45 minutos.</li>
+                                <li>Revisa con un palillo que esté bien cocido, debe salir limpio</li>
+                                <li>Apaga el horno y dejalo así 5 minutos, después abre un poco la puerta del horno por otros 10 minutos y después ya lo sacas</li>
+                                <li>Déjalo enfriar y después lo refrigeras 1 hora. </li>
+                                <li>Sabe delicioso.!! 🥰</li>
+                            </ol>
+                        </td>
+                        <td><img src="img/pay.jpeg" alt="Pay de Chokis" width="300" height="200"></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            <a href="#home"><em>return HOME</em></a>
+        </div>
+        <div id="aboutUs">
+            <h2>Sobre nosotros</h2>
+            <p><strong>Descripción</strong></p>
+            <p>Somos una compañía que busca la alimentación Sana y divertida</p>
+            <address>
+                <p><strong>Dirección:</strong> Calle 123 # 45-67</p>
+                <p>Cali - Colombia</p>
+            </address>
+            <a href="#home"><em>return HOME</em></a><br><br><br><br>
+        </div>
+        <div id="contact">
+            <form>
+                <legend><strong>Deja tus datos aquí</strong></legend>
+                <label for="nombre">Nombre</label>
+                <input type="text"><br>
+                <label for="apellido">Apellido</label>
+                <input type="text"><br>
+                <label for="email">email</label>
+                <input type="email" name="email"><br>
+                <label for="#">Mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
+                <button type="submit">Send</button><br>
+            </form><br>
+            <a href="#home"><em>return HOME</em></a><br><br>
         </div>
     </main>
+    <footer>
+        <p>Copyright</p>
+    </footer>
 </body>
 </html>
